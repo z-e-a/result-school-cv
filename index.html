@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/vs.css" />
+    <title>Evgeny Zubkov Curriculum vitae</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav class="nav">
+          <a class="nav_item" href="#about">about</a>
+          <a class="nav_item" href="#skills">skills</a>
+          <a class="nav_item" href="#code">code example</a>
+          <a class="nav_item" href="#education">education</a>
+          <a class="nav_item" href="#experience">experience</a>
+          <a class="nav_item" href="#english">English</a>
+          <a class="nav_item" href="#contacts">contacts</a>
+        </nav>
+        <div class="subheader">
+          <div class="subsubheader">
+            <h1 class="caption">Evgeny Zubkov</h1>
+            <h6 class="subcaption">hobbyist web-developer</h6>
+          </div>
+          <div>
+            <img class="photo" src="img/photo.png" alt="My photo" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div>
+            <a id="about"></a>
+            <h2>About myself</h2>
+            <p>
+              For the last couple of years I have been developing
+              web-applications as a hobby and I want to make programming my main
+              profession.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <a id="skills"></a>
+            <h2>Skills</h2>
+            <ul>
+              <li>C# (ASP.NET)</li>
+              <li>Java (Core, J2EE, Spring)</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <a id="code"></a>
+            <h2>Code example</h2>
+            <p>
+              Kata
+              <a
+                href="https://www.codewars.com/kata/546e2562b03326a88e000020/javascript"
+                >"Square Every Digit"</a
+              >
+              for 7kyu at codewars.com :
+            </p>
+            <pre><code class="javascript">
+    //Function that square every digit of a number and concatenate them.
+    //The function accepts an integer and returns an integer
+    
+    function squareDigits(num){
+    return parseInt(num.toString().split("").map((item) => Math.pow(parseInt(item),2)).join(""));
+    }
+    console.log(squareDigits(9119));
+                    </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <a id="experience"></a>
+            <h2>Work experience</h2>
+            <ul>
+              <li>
+                Traineeship at Fraunhofer-Institut für Medienkommunikation IMK
+                in Sankt Augustin
+              </li>
+              <li>
+                Engineer of IT-department at local branch of PJSC Sberbank
+              </li>
+              <li>
+                Deputy Head of IT-department at Regional Ministry of Finance
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <a id="education"></a>
+            <h2>Graduation</h2>
+            <p>
+              Master of Computer Science<br />
+              Taganrog State University of Radio Engineering
+            </p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <a id="english"></a>
+            <h2>English</h2>
+            <p>B1 (Intermediate)</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="subfooter">
+          <a href="https://rs.school/js/" class="rs-link"></a>
+          <div>
+            <a id="contacts"></a>
+            <h3>Contact information</h3>
+            <ul>
+              <li class="contact">E-mail: <a href="mailto:xopek.pro@internet.ru">xopek.pro@internet.ru</a></li>
+              <li class="contact">GitHub: <a href="https://github.com/xopek-pro">www.   github.com/xopek-pro</a></li>
+              <li class="contact">Discord: <i>xopek-pro#0872</i></li>
+              <li class="contact">Skype: <a href="Skype:zubkov_evgeny?chat">zubkov_evgeny</a></li>
+            </ul>
+          </div>
+          <p>©2021</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad("javascript");
+    </script>
+  </body>
+</html>

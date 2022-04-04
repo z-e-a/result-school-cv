@@ -1,0 +1,108 @@
+
+ body{
+   background-color: #c7c7c7;
+   font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+ } 
+
+  .content{
+    width: 900px;
+    margin: 0 auto;
+  }
+  .nav{
+    display: block;
+    width: 80%;
+    align-content: center ;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: small;
+  }
+
+  .nav_item{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    color: #999;
+    position: relative;
+  }
+  
+  .nav_item:hover{
+    color: rgb(0, 0, 238)
+  }
+
+  .nav_item:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 238);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+
+  .nav_item:hover:after{
+    opacity: 1;
+  }
+
+  .subheader{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo {
+    margin: 0 auto;
+    display: block;
+     width: 250px;
+    border: 2px solid #424242;
+    border-radius: 25px;
+    box-shadow: 0 6px 6px #252323;
+  }
+
+  .subsubheader{
+    background-image: linear-gradient(240deg,
+                    rgba(211, 211, 211, 0.9),
+                    rgba(211, 211, 211, 0.9)),
+                    url("../img/back_code.jpg");
+    box-shadow: 0 0 25px 25px #c7c7c7 inset;
+  }
+
+  .caption {
+    font-size: 4em;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 60px;
+    margin-bottom: 0;
+    font-family: Calibry, Arial, Helvetica, sans-serif;
+    color: #424242;
+    text-shadow: 0 4px 4px rgb(49, 49, 49);
+  }
+  
+  .subcaption {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-family: Calibry, Arial, Helvetica, sans-serif;
+    color: #424242;
+    text-shadow: 0 3px 3px rgb(49, 49, 49);    
+  }
+  .subfooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+  }
+ 
+  .rs-link {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: url(../img/rs_school_js.svg) no-repeat;
+}
+.contact a{
+  font-style: italic;
+}
