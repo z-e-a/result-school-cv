@@ -42,7 +42,7 @@
     left: 0;
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.2s linear;
+    transition: opacity 0.3s linear;
   }
 
   .nav_item:hover:after{
@@ -101,7 +101,7 @@
     display: block;
     width: 100px;
     height: 40px;
-    background: url(../img/rs_school_js.svg) no-repeat;
+    /* background: url(../img/rs_school_js.svg) no-repeat; */
 }
 .contact a{
   font-style: italic;
